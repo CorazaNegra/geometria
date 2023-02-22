@@ -6,7 +6,11 @@ public class Circulo_FSP extends FiguraGeometrica_FSP {
 	
 	public Circulo_FSP(double r, String tipoFigura) {
 		super(tipoFigura);
-		radio = r;
+		if (r<0){
+			radio=radio*-1;
+		}else{
+			radio = r;
+		}
 	}
 
 	@Override
